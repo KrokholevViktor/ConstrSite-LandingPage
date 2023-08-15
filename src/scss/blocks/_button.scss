@@ -1,0 +1,47 @@
+.button {
+    color: white;
+    background-color: $pink-color;
+    width: 160px;
+    height: 42px;
+    border: none;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.43px;
+    cursor: pointer;
+    &_404{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    &:hover {
+        background-color: $pink-color-hover;
+    }
+    &_form {
+        width: 160px;
+        height: 56px;
+        &-modal {
+            margin: 0 auto;
+            width: 100%;
+            height: 56px;
+            padding: 20px;
+        }
+    }
+    &_black {
+        border: none;
+        color: white;
+        width: 260px;
+        height: 56px;
+        background-color: $black-color;
+        cursor: pointer;
+        &:hover {
+            background-color: $black-color-hover;
+        }
+        &:disabled {
+            background-color: $black-color-hover;
+            opacity: 0.5;
+        }
+    }
+}

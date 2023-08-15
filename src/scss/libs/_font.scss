@@ -1,0 +1,20 @@
+/* Bebas Neue Font */
+@font-face {
+    font-family: "Bebas Neue";
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+    src: local("Bebas Neue Bold"), local("BebasNeue-Bold"), url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
+    preconnect: local("Bebas Neue Bold"), local("BebasNeue-Bold"), url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
+  }
+  
+  /* Open Sans Font */
+  @font-face {
+    font-family: "Open Sans";
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+    src: local("Open Sans"), local("OpenSans"), url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
+    preconnect: local("Open Sans"), local("OpenSans"), url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
+  }
+  

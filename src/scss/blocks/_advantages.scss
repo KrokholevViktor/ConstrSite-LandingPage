@@ -1,0 +1,86 @@
+.advantages {
+    min-height: 800px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__slider {
+        display: none;
+        // overflow: hidden;
+        width: 100%;
+    }
+    &__inner {
+        display: flex;
+        column-gap: 130px;
+        transition: 0.5s all;
+    }
+    &__title {
+        text-align: left;
+    }
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto;
+        
+    }
+    &__descr {
+        position: relative;
+        img {
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 12px;
+        }
+    }
+    &__card {
+        &_header {
+            height: 76px;
+            background-color: $background-color-white;
+            img {
+                width: 100px;
+                height: 76px;
+                object-fit: cover;
+            }
+        }
+        &_body {
+            background-color: $background-color-gray;
+            height: calc(100% - 76px);
+            padding: 20px;
+            &:hover {
+                border: 1px solid $black-color;
+                background-color: $background-color-white;
+                box-shadow: 0px 0px 32px rgba(168, 168, 168, 0.6);
+                padding: 19px;
+            }
+            div {
+                div {
+                    margin-left: 25px;
+                    margin-top: 24px;
+                    font-family: inherit;
+                    font-size: inherit;
+                    line-height: 116%;
+                }
+            }
+        }
+    
+    }
+    &__navigation {
+        margin-top: 40px;
+        display: flex;
+        justify-content: end;
+        .button_black {
+            height: 60px;
+            width: 60px;
+            &:disabled {
+                visibility: visible;
+                background-color: $black-color-hover;
+            }
+        }
+        
+    }
+}

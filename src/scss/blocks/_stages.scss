@@ -1,0 +1,92 @@
+.stages {
+    position: relative;
+    min-height: 1540px;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $background-color-gray;
+    &__title_end {
+        margin-top: -5px;
+        min-height: 192px;
+        text-align: left;
+        line-height: 64px;
+    }
+    &__wrapper {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 31% 38% 31%;
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        grid-row-gap: 20px;
+        padding-top: 40px;
+        justify-content: space-around;
+        .stages__item {
+            &_pile {
+                position: relative;
+                grid-column: 2;
+                grid-row: 1/7;
+                margin: 0 auto;
+                img {
+                    width: 41px;
+                    height: 502px;
+                }
+                #pile {
+                    
+                    position: sticky;
+                    top: 0;
+                }
+            }
+            
+            &:nth-child(2), &:nth-child(4), &:nth-child(6) {
+                grid-column: 1;
+            }
+            &:nth-child(3), &:nth-child(5) {
+                grid-column: 3;
+            }
+            &:nth-child(2) {
+                margin-top: 80px;
+                grid-row: 1;
+            }
+            &:nth-child(3) {
+                grid-row: 2;
+            }
+            &:nth-child(4) {
+                grid-row: 3;
+            }
+            &:nth-child(5) {
+                grid-row: 4;
+            }
+            &:nth-child(6) {
+                grid-row: 5;
+            }
+            &_title-btn {
+                width: 460px;
+                grid-column: 3/4;
+                grid-row: 6;
+                transform: translateX(-100px);
+                .button {
+                    margin-top: 68px;
+                }
+            }
+        }
+    }
+    &__item {
+        max-height: 200px;
+        &_header {
+            display: grid;
+            grid-template-columns: 29px 1fr;
+            column-gap: 20px;
+            span {
+                display: inline-block;
+                color: $pink-color;
+                margin-right: 20px;
+            }
+        }
+        &_description {
+            width: 1fr;
+            padding-top: 20px;
+            margin-left: 49px;
+        }
+        
+    }
+}

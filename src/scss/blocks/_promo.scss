@@ -1,0 +1,59 @@
+.promo {
+    
+    position: relative;
+    height: 746px;
+    padding-top: 101px;
+    padding-bottom: 60px;
+    &_wrapper {
+
+    }
+    &__title {
+        width: 560px;
+    }
+    &__link {
+        display: block;
+        padding: 20px 30px;
+        background-color: $black-color;
+        width: 300px;
+        height: 56px;
+        text-align: center;
+        margin-top: 70px;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover {
+            background-color: $black-color-hover;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        z-index: -10;
+        img {
+            width: 711px;
+            height: 583px;
+            object-fit: contain;
+        }
+    }
+    &__services {
+        
+        margin-top: 120px;
+        display: grid;
+        // height: 152px;
+        box-shadow: 0px 0px 32px rgba(168, 168, 168, 0.6);
+        background: #FFFFFF;
+        border-top: 1px solid $black-color;
+        border-left: 1px solid $black-color;
+        grid-template-rows: minmax(120px, auto);
+        grid-template-columns: repeat(3, minmax(100px, 386px));
+        &_item {
+            padding: 40px;
+            text-align: left;
+            border-bottom: 1px solid $black-color;
+            border-right: 1px solid $black-color;
+            span {
+                color: $pink-color;
+            }
+        }   
+    }
+}

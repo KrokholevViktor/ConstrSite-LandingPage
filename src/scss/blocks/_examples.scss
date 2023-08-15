@@ -1,0 +1,95 @@
+.examples {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__title {
+        text-align: left;
+    }
+    &__slide-container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    &__wrapper{
+        width: 1400px;
+        margin: 42px auto 0 auto; 
+        overflow: hidden;
+    }
+    &__inner {
+        display: flex;
+        column-gap: 10px;
+        transition: 0.5s all;
+        max-height: 900px;
+    }
+    &__slide {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        }
+    &__item {
+        display: block;
+        border: 1px solid $black-color;
+        width: 100%;
+        min-height: 367px;
+        overflow: hidden;
+        &:nth-child(1) {
+            width: 442px;
+        }
+        &:nth-child(2) {
+            width: 290px;
+        }
+        &:nth-child(3) {
+            width: 388px;
+        }
+        &:nth-child(4) {
+            width: 250px;
+        }
+        &:nth-child(5) {
+            width: 250px;
+        }
+        &:nth-child(6) {
+            width: 388px;
+        }
+        &:nth-child(7) {
+            width: 290px;
+        }
+        &:nth-child(8) {
+            width: 442px;
+        }
+        img {
+            display: block;
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            width: inherit;
+        }
+        &_descr {
+            // overflow: hidden;
+            border-top: 1px solid $black-color;
+            padding: 20px;
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+                margin-top: 3px;
+            }
+        }
+       
+    }
+    &__navigation {
+        margin-top: 40px;
+        padding-right: 8px;
+        display: flex;
+        justify-content: end;
+        .button_black {
+            height: 60px;
+            width: 60px;
+            &:disabled {
+                visibility: visible;
+                background-color: $black-color-hover;
+            }
+        }
+        
+    }
+}

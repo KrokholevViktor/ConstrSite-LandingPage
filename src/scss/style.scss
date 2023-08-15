@@ -1,0 +1,222 @@
+* {
+    
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    margin: 0;
+}
+
+body {
+    font-family: 'Bebas Neue';
+    -webkit-touch-callout: none;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+img {
+    pointer-events: none;
+  }
+
+
+@import 'base/variables';
+@import 'blocks/header';
+@import 'blocks/button';
+@import 'blocks/title';
+@import 'blocks/promo';
+@import 'blocks/characteristics';
+@import 'blocks/form-slider';
+@import 'blocks/advantages';
+@import 'blocks/stages';
+@import 'blocks/info';
+@import 'blocks/examples';
+@import 'blocks/reviews';
+@import 'blocks/questions';
+@import 'blocks/animation';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/modal';
+
+
+
+.fz-12-os {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.fz-14-os {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.fz-16-bn {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.43px;
+ }
+
+ .fz-16-os {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+ }
+
+.fz-24-bn {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.fz-32-bn {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.fz-36-bn {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.fz-48-bn {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.fz-64-bn {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.ask-selected {
+    background-color: $pink-color;
+    color: $background-color-white;
+    height: 100%;
+}
+.status {
+    margin: 0px 40px 0px 40px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.navigation {
+    &_next {
+        margin-left: 40px;
+        .arrow-right {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 12px;
+            height: 8px;
+            display: flex;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    border-bottom: 1px solid white;
+                    border-right: 1px solid white;
+                    top: 1px;
+                    right: 0px;
+                    transform: rotate(-45deg);
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 12px;
+                    height: 1px;
+                    background-color: white;
+                    border-radius: 5px;
+                    top: 50%;
+                }
+        }
+    }
+    &_prev {
+        .arrow-left {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 12px;
+            height: 8px;
+            display: flex;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    border-top: 1px solid white;
+                    border-left: 1px solid white;
+                    top: 1px;
+                    transform: rotate(-45deg);
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 12px;
+                    height: 1px;
+                    background-color: white;
+                    border-radius: 5px;
+                    top: 50%;
+                }
+        }
+    }
+}
+
+.fixed {
+    position: fixed;
+    box-shadow: 0px 0px 32px rgba(168, 168, 168, 0.6);
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+@import "blocks/media";
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.container {
+    &__overflow_hidden {
+        overflow: hidden;
+    }
+}
+
+[class*="copyrights-pane"] {
+    display: none !important;
+}

@@ -1,0 +1,27 @@
+@keyframes fadeInAnimation {
+	0% {
+	  opacity: 0; /* Начальная прозрачность 0 */
+	  transform: scale(0.8) translateY(-20px);
+	//   height: 0px;
+	  
+	}
+	100% {
+	  opacity: 1; /* Конечная прозрачность 1 */
+	  transform: scale(1) translateY(0px);
+	//   height: auto;
+	  
+	}
+  }
+  
+  @keyframes fadeOutAnimation {
+	0% {
+	  opacity: 1; /* Начальная прозрачность 1 */
+	  transform: scale(1);
+	//   height: auto;
+	}
+	100% {
+	  opacity: 0; /* Конечная прозрачность 0 */
+	  transform: scale(0.8) translateY(-20px);
+	//   height: 0px;
+	}
+  }
