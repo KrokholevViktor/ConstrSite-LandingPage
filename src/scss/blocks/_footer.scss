@@ -4,9 +4,10 @@
     padding-top: 40px;
     padding-bottom: 40px;
     &__logo {
-        height: 37px;
-        width: 260px;
+        height: 80px;
+        width: 100%;
         margin-bottom: 10px;
+        filter: invert(100%);
     }
     img {
         object-fit: contain;
@@ -18,7 +19,7 @@
         justify-content: space-between;
     }
     &__item {
-        justify-content: end;
+        align-items: center;
         width: 492px;
         text-align: right;
         &:first-child{

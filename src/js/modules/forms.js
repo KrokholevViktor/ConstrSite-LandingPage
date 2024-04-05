@@ -5,9 +5,9 @@ function forms(state) {
           upload = document.querySelectorAll('[name="file"]');
 
     const message = {
-        loading: 'Загрузка...',
-        success: 'Заявка успешно отправленна!',
-        failure: 'Что-то пошло не так...'
+        loading: 'loading...',
+        success: 'Application sent successfully!',
+        failure: 'Something went wrong...'
     };
 
     const postData = async (url, data) => {
@@ -24,7 +24,7 @@ function forms(state) {
             input.value = '';
         });
         upload.forEach(item => {
-            item.previousElementSibling.textContent = 'Прикрепить файл';
+            item.previousElementSibling.textContent = 'Attach file';
         });
     };
 
@@ -146,19 +146,19 @@ function forms(state) {
 
         function createErrorMessage(inputFocusCurrent) {
             if(inputFocusCurrent.value == "" && inputFocusCurrent.getAttribute('name') === 'phone') {
-                createError(inputFocusCurrent, 'Поле не заполнено');
+                createError(inputFocusCurrent, 'The field is not filled');
                 result = false;
             } else if (inputFocusCurrent.value == "" && inputFocusCurrent.getAttribute('name') === 'email') {
-                createError(inputFocusCurrent, 'Поле не заполнено');
+                createError(inputFocusCurrent, 'The field is not filled');
                 result = false;
             } else if(inputFocusCurrent.value.length < minLength && inputFocusCurrent.getAttribute('name') === 'phone') {
-                createError(inputFocusCurrent, 'Введите номер полностью');
+                createError(inputFocusCurrent, 'Enter the full number');
                 result = false;
             } else if ((emailFlag == false) && inputFocusCurrent.getAttribute('name') === 'email') {
-                createError(inputFocusCurrent, 'Неверный адрес электронной почты.');
+                createError(inputFocusCurrent, 'Incorrect E-Mail Address.');
                 result = false;
             } else if (!inputFocusCurrent.checked && inputFocusCurrent.getAttribute('name') === 'checkbox' && event.type == 'submit') {
-                createError(inputFocusCurrent, 'Подтвердите свое согласие');
+                createError(inputFocusCurrent, 'Confirm your consent');
                 result = false;
             }
         }
@@ -192,19 +192,19 @@ function forms(state) {
                 }
 
                 if(input.value == "" && input.getAttribute('name') === 'phone') {
-                    createError(input, 'Поле не заполнено');
+                    createError(input, 'The field is not filled');
                     result = false;
                 } else if (input.value == "" && input.getAttribute('name') === 'email') {
-                    createError(input, 'Поле не заполнено');
+                    createError(input, 'The field is not filled');
                     result = false;
                 } else if(input.value.length < minLength && input.getAttribute('name') === 'phone') {
-                    createError(input, 'Введите номер полностью');
+                    createError(input, 'Enter the full number');
                     result = false;
                 } else if ((emailFlag == false) && input.getAttribute('name') === 'email') {
-                    createError(input, 'Неверный адрес электронной почты.');
+                    createError(input, 'Incorrect E-Mail Address.');
                     result = false;
                 } else if (!input.checked && input.getAttribute('name') === 'checkbox' && event.type == 'submit') {
-                    createError(input, 'Подтвердите свое согласие');
+                    createError(input, 'Confirm your consent');
                     result = false;
                 }
             }

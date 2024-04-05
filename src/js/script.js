@@ -112,8 +112,9 @@ document.addEventListener('DOMContentLoaded', function () {
             
                 // Ваша функция yandexmap() здесь
                 function yandexmap() {
-                    let address_map = document.querySelector('.address_map').textContent;
-                    let address_descr = document.querySelector('.address_descr').textContent;
+                    let address_map = 'Karl-Ludwig-Busse-Straße 2/4 14707 Detmold'; // document.querySelector('.address_map').textContent;
+                    let address_descr = 'construction@company.com'; // document.querySelector('.address_descr').textContent;
+                    
                     let apiKey = '1997deae-7f1f-4cdb-bbee-84f7aafcaf39';
                     let geocodeUrl = "https://geocode-maps.yandex.ru/1.x/?apikey=" + apiKey + "&format=json&geocode=" + encodeURIComponent(address_map);
                     let latitude = 52.288503;

@@ -42,6 +42,10 @@
         height: 100%;
         overflow: hidden;
         cursor: pointer;
+        .img-selected {
+            opacity: 0.25;
+            transform: translateY(0px);
+        }
             img {
                 display: block;
                 transform: translateY(30px);
@@ -102,10 +106,6 @@
                 .form-slider__img {
                     img {
                         filter: saturate(1);
-                        transform: translateY(0px);
-                    }
-                    .img-selected {
-                        opacity: 0.25;
                         transform: translateY(0px);
                     }
                 }
@@ -390,4 +390,6 @@
                 }
             }
         }
+
+
 }
