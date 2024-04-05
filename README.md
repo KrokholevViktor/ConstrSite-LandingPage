@@ -1,5 +1,5 @@
 ﻿# MasterStroy
 
-[MasterStroy - ДЕМО](https://krokholevviktor.github.io/SPECIAL-PILE-N/)
+[MasterStroy - ДЕМО](https://krokholevviktor.github.io/ConstructionSite/) 
 
-![Текст описания](build/img/preview.jpg)
+![Текст описания](src/img/preview.png)
