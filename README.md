@@ -1,5 +1,5 @@
-﻿# MasterStroy
+﻿# ConstructionSite
 
-[MasterStroy - ДЕМО](https://krokholevviktor.github.io/ConstructionSite/) 
+[ConstructionSite - demo](https://krokholevviktor.github.io/ConstructionSite/) 
 
 ![Текст описания](src/img/preview.png)
